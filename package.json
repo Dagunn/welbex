@@ -1,0 +1,23 @@
+{
+  "name": "welbex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dagunn/welbex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dagunn/welbex/issues"
+  },
+  "homepage": "https://github.com/Dagunn/welbex#readme",
+  "devDependencies": {
+    "del": "^7.0.0",
+    "gulp": "^4.0.2"
+  }
+}
