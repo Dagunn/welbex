@@ -1,8 +1,11 @@
-const gulp = require('gulp')
-const del = require('del')
+const {
+    watch
+} = require('gulp');
+const compileScssTask = require('./styles.js');
+const paths = require('./config.js');
 
-function clean() {
-    return del (['dist'])
+const watcher = function () {
+    watch(paths.styles.src, compileScssTask);
 }
 
-exports.clean = clean
+module.exports = watcher;

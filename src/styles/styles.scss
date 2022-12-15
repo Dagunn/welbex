@@ -1,0 +1,13 @@
+@import '../styles/tools/mixins';
+
+
+
+
+
+body {
+    color: #000;
+
+    @include media(md) {
+        color: red;
+    }
+}

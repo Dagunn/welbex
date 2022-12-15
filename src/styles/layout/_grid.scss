@@ -1,0 +1,61 @@
+.grid {
+  display: grid;
+  align-content: flex-start;
+}
+
+.grid2Col {
+  @extend .grid;
+  grid-template-columns: repeat(2, 1fr);    
+}
+
+.grid3Col {
+  @extend .grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.flex,
+.flex-center-x,
+.flex-center-y,
+.flex-center-xy {
+  display: flex;
+}
+
+.flex-center-x {
+  justify-content: center;
+}
+
+.flex-center-y {
+  align-items: center;
+}
+
+.flex-center-xy {
+  @extend .flex-center-x;
+  @extend .flex-center-y;
+  height: 100%;
+}
+
+.flex-tab-reverse {
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+  }
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}

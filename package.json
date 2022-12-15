@@ -1,23 +1,32 @@
 {
-  "name": "welbex",
-  "version": "1.0.0",
-  "description": "",
+  "name": "css_capital",
+  "version": "1.0.1",
+  "description": "Few tasks for compiling css and create sprite",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Dagunn/welbex.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Dagunn/welbex/issues"
-  },
-  "homepage": "https://github.com/Dagunn/welbex#readme",
-  "devDependencies": {
-    "del": "^7.0.0",
+  "dependencies": {
     "gulp": "^4.0.2"
-  }
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-dependents": "^1.2.5",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "postcss": "^8.3.11",
+    "sass": "^1.43.4"
+  },
+  "scripts": {
+    "start": "gulp watch",
+    "build": "gulp build"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not IE 11",
+    "not dead",
+    "since 2018"
+  ],
+  "author": "",
+  "license": "ISC"
 }
