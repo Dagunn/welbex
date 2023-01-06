@@ -30,9 +30,9 @@ const compileScssTask = function (cb) {
     .pipe(dest(paths.styles.dest));
 }
 
-const stylesParts = function (cb) {
+const styles = function (cb) {
   return src(paths.styles.src, {
-      since: lastRun(stylesParts)
+      since: lastRun(styles)
     })
     .pipe(dependents())
     .pipe(sass())
@@ -49,4 +49,4 @@ const stylesParts = function (cb) {
     .pipe(dest(paths.styles.dest));
 }
 
-module.exports = stylesParts;
+module.exports = styles;

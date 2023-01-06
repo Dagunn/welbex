@@ -1,13 +1,74 @@
-@import '../styles/tools/mixins';
+@import 'tools/mixins';
+@import 'settings/variables';
+@import 'reset/reset';
+@import 'normalize/normalize';
+@import 'layout/layout';
+@import 'layout/grid';
+@import 'helper/helper';
+
 
 
 
 
 
 body {
-    color: #000;
+    background: #000;
+}
 
-    @include media(md) {
-        color: red;
+.exited {
+    gap: 80px 40px;
+    margin-bottom: 100px;
+}
+
+.spheres {
+    gap: 40px 80px;
+}
+
+.sphere {
+    max-width: 216px;
+    text-align: center;
+    margin: 0 auto;
+
+    &__title {
+        font-size: var(--fzSm);
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+
+    &__descr {
+        font-size: var(--fzMd);
+        color: var(--lightGrey);
+    }
+   
+}
+
+.textWrap {
+    max-width: 464px;
+}
+
+.itemsWrap {
+    gap: 30px 20px;
+}
+
+.itemBox {
+    max-width: 296px;
+    background: rgba(21, 21, 29, 0.6);
+    border-top: 1.25px solid var(--colorAccent1);
+    padding: 30px;
+
+    &__icon {
+        display: inline-flex;
+        width: 79px;
+        height: 79px;
+        background-color: var(--itemBg);
+        border-radius: 50%;
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-size: var(--fzSm);
+        font-weight: 500;
+        text-transform: uppercase;
     }
 }

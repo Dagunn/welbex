@@ -12,7 +12,7 @@ const rename = require('gulp-rename');
 const groupmq = require('gulp-group-css-media-queries');
 
 
-const stylesParts = function (cb) {
+const styles = function (cb) {
   return src(paths.styles.src)
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer({
@@ -32,4 +32,4 @@ const stylesParts = function (cb) {
 }
 
 
-module.exports = stylesParts;
+module.exports = styles;
